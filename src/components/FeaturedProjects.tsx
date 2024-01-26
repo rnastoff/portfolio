@@ -1,3 +1,5 @@
+import SectionHeader from "./SectionHeader";
+import SectionBodyWrapper from "./SectionBodyWrapper";
 import FeaturedProject from "./FeaturedProject";
 import ProjectLine from "./ProjectLine";
 
@@ -20,15 +22,8 @@ export default function FeaturedProjects() {
 
   return (
     <section className="mt-8">
-      {/* TITLE */}
-      <div className="border border-[#3a3a3a] bg-[#191919] bg-opacity-50">
-        <h3 className="text-[#eeeeee] text-xl font-bold py-1 px-2">FEATURED PROJECTS</h3>
-      </div>
-
-      {/* BODY */}
-      <div className="text-[#eeeeee] border-l-[1px] border-r-[1px] border-b-[1px]  border-[#3a3a3a] bg-[#191919] bg-opacity-25 ">
-        {projectsHTML}
-      </div>
+      <SectionHeader title="FEATURED PROJECTS" />
+      <SectionBodyWrapper>{projectsHTML}</SectionBodyWrapper>
     </section>
   );
 }

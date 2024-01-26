@@ -13,8 +13,8 @@ export default function FeaturedProject({ title, description, tools, githubLink,
     <div className="flex justify-between py-3 px-2">
       {/* Details */}
       <div className="self-end">
-        <p className="text-[#eeeeee] font-normal text-lg">{title}</p>
-        <p className="text-[#aaaaaa] font-normal text-base w-[90%]">{description}</p>
+        <p className="text-[#eeeeee] font-normal sm:text-lg text-base">{title}</p>
+        <p className="text-[#aaaaaa] font-normal sm:text-base text-sm w-[90%]">{description}</p>
 
         {/* Tools and Links */}
         <div className="flex justify-between">

@@ -12,7 +12,7 @@ export default function OtherProject({ title, tools, githubLink, siteLink }: Oth
     <div className="flex justify-between py-3 px-2">
       {/* Details */}
       <div className="self-end w-full">
-        <p className="text-[#eeeeee] font-normal text-lg">{title}</p>
+        <p className="text-[#eeeeee] font-normal sm:text-lg text-base">{title}</p>
 
         {/* Tools and Links */}
         <div className="flex justify-between">

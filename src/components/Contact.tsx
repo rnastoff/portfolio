@@ -1,13 +1,14 @@
+import SectionHeader from "./SectionHeader";
+import SectionBodyWrapper from "./SectionBodyWrapper";
+
 export default function Contact() {
   return (
     <section className="mt-8">
-      <div className="border border-[#3a3a3a] bg-[#191919] bg-opacity-50">
-        <h3 className="text-[#eeeeee] text-xl font-bold py-1 px-2">CONTACT</h3>
-      </div>
-      <div className="text-[#aaaaaa] text-base border-l-[1px] border-r-[1px] border-b-[1px]  border-[#3a3a3a] bg-[#191919] bg-opacity-25 py-4 px-4">
-        <form>
+      <SectionHeader title="CONTACT" />
+      <SectionBodyWrapper>
+        <form className="py-3 px-2">
           <textarea
-            className="w-full h-32 bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] p-2 outline-none placeholder-[#aaaaaa] resize-none"
+            className="w-full h-32 bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] sm:text-base text-sm p-2 outline-none placeholder-[#aaaaaa] resize-none"
             placeholder="Send me a message"
           />
           <div className="flex ">
@@ -16,7 +17,7 @@ export default function Contact() {
             </button>
           </div>
         </form>
-      </div>
+      </SectionBodyWrapper>
     </section>
   );
 }
