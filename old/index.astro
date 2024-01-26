@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header";
+import Home from "../components/Home";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="max-w-6xl w-full">
+    <!-- HOME -->
+    <section class="h-screen">
+      <div class="flex flex-col justify-center items-center relative">
+        <Header />
+        <Home />
+      </div>
+    </section>
+  </main>
+</Layout>
