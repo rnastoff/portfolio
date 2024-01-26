@@ -1,3 +1,5 @@
+import { formatTools } from "../utils/utils";
+
 interface OtherProjectProps {
   title: string;
   tools: string[];
@@ -6,7 +8,7 @@ interface OtherProjectProps {
 }
 
 export default function OtherProject({ title, tools, githubLink, siteLink }: OtherProjectProps) {
-  const formattedTools = tools.join(" | ");
+  const formattedTools = formatTools(tools);
 
   return (
     <div className="flex justify-between py-3 px-2">

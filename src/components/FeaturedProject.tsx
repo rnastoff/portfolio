@@ -1,3 +1,5 @@
+import { formatTools } from "../utils/utils";
+
 interface FeaturedProjectProps {
   title: string;
   description: string;
@@ -7,7 +9,7 @@ interface FeaturedProjectProps {
 }
 
 export default function FeaturedProject({ title, description, tools, githubLink, siteLink }: FeaturedProjectProps) {
-  const formattedTools = tools.join(" | ");
+  const formattedTools = formatTools(tools);
 
   return (
     <div className="flex justify-between py-3 px-2">
