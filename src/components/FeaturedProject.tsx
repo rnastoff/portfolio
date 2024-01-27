@@ -15,7 +15,9 @@ export default function FeaturedProject({ title, description, tools, githubLink,
     <div className="flex justify-between py-3 px-2">
       {/* Details */}
       <div className="self-end">
-        <p className="text-[#eeeeee] font-normal text-base">{title}</p>
+        <a href={siteLink} target="_blank" className="text-[#eeeeee] font-normal text-base">
+          {title}
+        </a>
         <p className="text-[#aaaaaa] font-normal text-sm  w-[90%]">{description}</p>
 
         {/* Tools and Links */}

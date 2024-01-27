@@ -1,3 +1,5 @@
+import { getDate } from "../utils/utils";
+
 export default function Header() {
   return (
     <header className="flex justify-between sm:mt-8 mt-2">
@@ -14,7 +16,7 @@ export default function Header() {
             <img src="/linkedin.svg" className="ml-2" alt="linked in logo" width="20" height="20" />
           </a>
         </div>
-        <p className="text-[#aaaaaa] text-xs text-right mt-1">u. 240124</p>
+        <p className="text-[#aaaaaa] text-xs text-right mt-1">u. {getDate()}</p>
       </div>
     </header>
   );
