@@ -12,7 +12,7 @@ export default function Contact() {
             placeholder="Send me a message"
           />
           <div className="flex ">
-            <button className="text-[#eeeeee] bg-[#191919] bg-opacity-50 px-4 py-2 text-center border border-[#3a3a3a] w-full mt-2">
+            <button className="text-[#eeeeee] font-bold bg-[#191919] bg-opacity-50 px-4 py-2 text-center border border-[#3a3a3a] w-full mt-2">
               SUBMIT
             </button>
           </div>
