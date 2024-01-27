@@ -3,7 +3,7 @@ export const featuredProjectsData = [
     title: "Cheese Palace",
     description:
       "A demo e-commerce site for selling Cheese. Features include server-based pagination, categories, search, and a shopping cart.",
-    tools: ["Next.js", "Typescript", "Sanity.io", "Stripe"],
+    tools: ["Next.js", "Typescript", "Sanity.io", "Stripe", "Swiper"],
     githubLink: "https://github.com/rnastoff/cheese-palace",
     siteLink: "https://cheese-palace.vercel.app/",
   },
