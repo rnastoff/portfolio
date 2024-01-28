@@ -18,8 +18,6 @@ export default function Contact() {
     e.preventDefault();
     const currentForm = form.current;
 
-    console.log("FORM: ", form.current);
-
     if (currentForm == null) {
       // This is necessary for typescript
       return;
@@ -35,7 +33,10 @@ export default function Contact() {
       (result) => {
         setError("");
         setSuccess(true);
-        currentForm.reset();
+        setName("");
+        setEmail("");
+        setTextArea("");
+        // currentForm.reset();
       },
       (error) => {
         console.log("send error");
