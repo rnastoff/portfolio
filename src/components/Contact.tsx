@@ -56,27 +56,36 @@ export default function Contact() {
         <form ref={form} onSubmit={handleSubmit} className="flex flex-col py-3 px-2">
           {error && errorMessage}
           {success && successMessage}
+          <label className="text-[#eeeeee] text-sm" htmlFor="name">
+            Name
+          </label>
           <input
-            className="w-full bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] text-sm p-2 outline-none placeholder-[#aaaaaa] "
+            id="name"
+            className="w-full bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] text-sm p-2 outline-none placeholder-[#aaaaaa] mt-1"
             type="text"
-            placeholder="Name"
             name="user_name"
             onChange={(e) => setName(e.target.value)}
             value={name}
             required
           />
+          <label className="text-[#eeeeee] text-sm mt-4" htmlFor="email">
+            Email
+          </label>
           <input
-            className="w-full bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] text-sm p-2 outline-none placeholder-[#aaaaaa] mt-4"
+            id="email"
+            className="w-full bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] text-sm p-2 outline-none placeholder-[#aaaaaa] mt-1"
             type="email"
-            placeholder="Email"
             name="user_email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             required
           />
+          <label className="text-[#eeeeee] text-sm mt-4" htmlFor="message">
+            Message
+          </label>
           <textarea
-            className="w-full h-32 bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] text-sm p-2 outline-none placeholder-[#aaaaaa] resize-none mt-4"
-            placeholder="Send me a message"
+            id="message"
+            className="w-full h-32 bg-[#191919] bg-opacity-50 text-[#eeeeee] border border-[#3a3a3a] text-sm p-2 outline-none placeholder-[#aaaaaa] resize-none mt-1"
             name="message"
             onChange={(e) => setTextArea(e.target.value)}
             value={textArea}
